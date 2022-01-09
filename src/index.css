@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html{
   font-size : 62.5%;
   box-sizing : border-box;
@@ -7,8 +8,9 @@ body, #root{
   margin : 0 ;
 }
 body,input,select,button,textarea {
+  font-family: Montserrat,helvetica,Arial,sans-serif;
   font-size : 1.6rem;
-  font-family: helvetica,Arial,sans-serif;
+  
 }
 
 .grid-container {
@@ -21,8 +23,11 @@ body,input,select,button,textarea {
   height : 100% ;
 
 }
+a{
+  text-decoration : none;
+}
 a:hover {
-  color: orangered;
+  color: #ff4400;
 }
 header {
   grid-area: header;
@@ -30,6 +35,7 @@ header {
   color : white;
   display: flex;
   justify-content: center;
+  padding : 0.5rem;
 
 }
 header a{
@@ -74,7 +80,7 @@ flex-wrap : wrap;
   }
 
   .products li{
-    flex: 1 1 29rem;
+    flex: 0 1 29rem;
     height : 47rem;
     padding : 1rem;
     margin : 1rem;
@@ -130,3 +136,18 @@ flex-wrap : wrap;
 
 
   }
+
+
+ .filter{
+   display : flex;
+   justify-content: space-between;
+   padding : 1rem;
+   margin : 1rem;
+   border-bottom:   0.1rem #c0c0c0 solid;
+
+ }
+
+ .filter div{
+   flex:1;
+   
+ }
